@@ -2,32 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+.bg-dark-blue{
+  background-color: #03032b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-blue-2 {
+  background: linear-gradient(500deg,#063e91,#0a54c4,#8b5cf6,#46c5ef,#8311ee);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-pink-purple-2 {
+  background: linear-gradient(150deg,#e81ae8,#ee10f6,#8311ee,#8b5cf6);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg-pink-purple-3 {
+  background: linear-gradient(180deg,#299eec,#4661e5,#6827f4,#6510ef);
+}
+
+.bg-pink-purple-4 {
+  background: linear-gradient(180deg,#6510ef,#4661e5,#6827f4,#299eec);
+}
+
+.bg-img {
+  background-image: url('https://github.com/images/modules/site/copilot/enterprise-2.webp');
+}
+
+.bg-img-2 {
+  background-image: url('https://github.githubassets.com/assets/features-bento-5-c4770e83b74f.webp');
+  width: px;
 }
